@@ -1,1 +1,37 @@
-test
+User Class:
+    Will accept two strings, one for username and one for password (which will be case sensitive) for signing into an account.
+    Will accept a method to sign up for an account if the user does not have one available.
+    Once signed in the user will have access to a page to order food from a restaurant location near them.
+
+Payment Class:
+    Payment class will be able to accept multiple types of input including string values for credit/debit card information,
+    options to link apple pay or google pay to the account where they will be prompted to log in and connect, or paypal as
+    an option to pay as well.
+
+Location Class:
+    Takes in an int value for a zipcode and finds the closest available restaurants near the user.
+    Takes in a string for the users home address for food to be delivered 
+
+Order Class:
+    Provides a list of available foods that can be ordered.
+    Has a double value with a price for different foods available, and can also accept string discount codes.
+    Provides a customizable list of options for available foods.
+    Will have an option to pick the food up at the restaurant location.
+
+Restaurant Class:
+    Manages the available list of items and prices of the items.
+    Provides an estimated amount of time until the order is ready to be delievered or be ready for pickup based on how active the location is.
+    Accepts payments from payment class.
+
+Delivery Driver Class:
+    Provides information to the driver such as the order, the customers address, and will allow the driver to set an estimated delivery time when leaving the restaurant.
+
+Menu Class:
+    Has a list of different items that the restaurant has to offer.
+    Managed by the restaurant class and can change at any time if an item needs to be adjusted, added, or removed.
+    Shows a double value of the price of each individual item.
+
+Items Class:
+    Manages the individual items which are saved as strings.
+    Provides a list of ingredients and total calories for the item so the user knows what is in the food they are ordering.
+    Accepts an adjustable double value to price the item.
