@@ -1,2 +1,0 @@
-System handles ordering and delivery of food for a restaurant. User should be able to view different types of available food
-that the restaurant has, an estimated wait time, and the option to pick up the food themselves instead of waiting for delivery.
