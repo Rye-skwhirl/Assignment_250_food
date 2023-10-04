@@ -4,9 +4,8 @@ User Class:
     Once signed in the user will have access to a page to order food from a restaurant location near them.
 
 Payment Class:
-    Payment class will be able to accept multiple types of input including string values for credit/debit card information,
-    options to link apple pay or google pay to the account where they will be prompted to log in and connect, or paypal as
-    an option to pay as well.
+    Payment class will be able to accept multiple types of input including string values for credit/debit card information, an int for the CVV and expiration date,
+    and methods to link apple pay, google pay or paypal.
 
 Location Class:
     Takes in an int value for a zipcode and finds the closest available restaurants near the user.
@@ -32,6 +31,6 @@ Menu Class:
     Shows a double value of the price of each individual item.
 
 Items Class:
-    Manages the individual items which are saved as strings.
+    Individual item names and what comes with saved as a string.
     Provides a list of ingredients and total calories for the item so the user knows what is in the food they are ordering.
     Accepts an adjustable double value to price the item.
