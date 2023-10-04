@@ -1,0 +1,44 @@
+Development Plan and Timeline
+
+Week 1: Preliminary Preparations
+- Monday - Wednesday:
+  - All team members: Kick-off meeting to understand the project scope, requirements, and individual responsibilities.
+
+Week 2: Initial Drafts and Definitions
+- Monday - Tuesday:
+  - Stanley Schwarz (Architecture): Outline high-level system architecture.
+- Wednesday - Friday:
+  - Jonathon Wolfe (Class Description and Attributes): Draft class descriptions, noting attributes, methods, and relations.
+
+Week 3: Detailing and Refinement
+- Monday - Wednesday:
+  - Patrick Huynh (UML Class Diagram): Start sketching UML Class Diagram based on class descriptions.
+- Thursday - Friday:
+  - Julio Nunez Garcia (Description of Operation): Document description of how each component/class operates.
+
+Week 4: Consolidation and Final Drafts
+- Monday - Tuesday:
+  - Stanley Schwarz (Architecture): Refine and finalize architectural design.
+- Wednesday:
+  - Jonathon Wolfe (Class Description and Attributes): Finalize class descriptions and attributes.
+- Thursday:
+  - Patrick Huynh (UML Class Diagram): Complete final UML Class Diagram.
+- Friday:
+  - Julio Nunez Garcia (Description of Operation): Finalize description of operations.
+
+Week 5: Review, Feedback, and Adjustments
+- Monday:
+  - All team members: Joint review of all deliverables.
+- Tuesday - Thursday:
+  - Individual Responsibilities: Refine tasks based on feedback.
+- Friday:
+  - All team members: Address any last-minute revisions.
+
+Week 6: Project Completion and Handover
+- Monday:
+  - All team members: Compile all documents and prepare a presentation or report.
+- Tuesday:
+  - Julio Nunez Garcia (Development Plan and Timeline): Document the process, milestones, and timelines.
+- Wednesday - Friday:
+  - All team members: Final review and handover to stakeholders.
+
