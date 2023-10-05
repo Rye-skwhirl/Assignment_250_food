@@ -1,0 +1,66 @@
+Description of Operations:
+
+User Class:
+Properties:
+- username (String): Represents the unique identifier for the user. Must be unique for every user.
+- password (String): Represents the user's password. It is case sensitive.
+Methods:
+- signUp(username: String, password: String): Allows a new user to create an account.
+- signIn(username: String, password: String): Validates username and password, granting access to the food order page if valid.
+
+Payment Class:
+Properties:
+- cardInfo (String): Stores credit/debit card number.
+- cvv (Int): Represents the CVV of the card.
+- expiryDate (Int): Represents the expiration date of the card.
+Methods:
+- linkApplePay(): Links user's Apple Pay for payments.
+- linkGooglePay(): Links user's Google Pay for payments.
+- linkPayPal(): Links user's PayPal for payments.
+
+Location Class:
+Properties:
+- zipcode (Int): Represents the user's current location or desired area for restaurant search.
+- homeAddress (String): Represents the delivery address.
+Methods:
+- findRestaurants(zipcode: Int): Returns list of nearby restaurants based on given zipcode.
+
+Order Class:
+Properties:
+- foodList (List): List of foods selected by the user.
+- price (Double): Represents total cost of the order.
+- discountCode (String, optional): If provided, applies the discount to the total price.
+Methods:
+- customizeOrder(): Allows user to modify food items, adding or removing ingredients.
+- pickupOption(): Allows user to select pickup instead of delivery.
+
+Restaurant Class:
+Properties:
+- menu (Menu Class): Represents the current menu of the restaurant.
+- activityLevel (Int): Represents how busy the restaurant is.
+Methods:
+- estimateOrderTime(activityLevel: Int): Gives an estimated time for delivery or pickup based on activity level.
+- acceptPayment(payment: Payment Class): Process the payment from the user.
+
+Delivery Driver Class:
+Properties:
+- orderDetails (Order Class): Details about the order to be delivered.
+- deliveryAddress (String): Address where the order should be delivered.
+- estimatedDeliveryTime (Int): Represents estimated delivery time in minutes.
+Methods:
+- setEstimatedDeliveryTime(time: Int): Driver sets the estimated time for delivery.
+
+Menu Class:
+Properties:
+- itemsList (List of Items Class): List of all available items in the restaurant.
+Methods:
+- addItem(item: Items Class): Adds a new item to the menu.
+- removeItem(item: Items Class): Removes an item from the menu.
+- adjustItem(item: Items Class): Modifies the details of an existing item.
+
+Items Class:
+Properties:
+- itemName (String): Name of the food item.
+- ingredients (List of Strings): List of ingredients used in the item.
+- calories (Int): Represents the calorie content of the item.
+- price (Double): Price of the item.
