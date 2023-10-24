@@ -1,0 +1,73 @@
+========== User Class ==========
+
+1. **Test Operation**: Verify SignUp
+   - **Input**: username (String), password (String)
+   - **Expected Output**: Account creation successful.
+   - **Conditions**: username must be unique for each user.
+
+2. **Test Operation**: SignIn Validation
+   - **Input**: username (String), password (String)
+   - **Expected Output**: Access granted to the food order page.
+   - **Conditions**: password is case sensitive.
+
+========== Payment Class ==========
+
+3. **Test Operation**: Link Apple Pay
+   - **Expected Output**: User's Apple Pay linked successfully.
+
+4. **Test Operation**: Link Google Pay
+   - **Expected Output**: User's Google Pay linked successfully.
+
+5. **Test Operation**: Link PayPal
+   - **Expected Output**: User's PayPal linked successfully.
+
+========== Location Class ==========
+
+6. **Test Operation**: Find Restaurants by Zipcode
+   - **Input**: zipcode (Int)
+   - **Expected Output**: List of nearby restaurants.
+
+========== Order Class ==========
+
+7. **Test Operation**: Customize Order
+   - **Expected Output**: Modified food items in the foodList.
+
+8. **Test Operation**: Select Pickup Option
+   - **Expected Output**: User selects pickup instead of delivery.
+
+========== Restaurant Class ==========
+
+9. **Test Operation**: Estimate Order Time
+   - **Input**: activityLevel (Int)
+   - **Expected Output**: Estimated time for delivery or pickup.
+
+10. **Test Operation**: Process Payment
+    - **Input**: payment (Payment Class)
+    - **Expected Output**: Payment processed successfully.
+
+========== Delivery Driver Class ==========
+
+11. **Test Operation**: Set Estimated Delivery Time
+    - **Input**: time (Int)
+    - **Expected Output**: Estimated delivery time set.
+
+========== Menu Class ==========
+
+12. **Test Operation**: Add Item to Menu
+    - **Input**: item (Items Class)
+    - **Expected Output**: Item added successfully to the menu.
+
+13. **Test Operation**: Remove Item from Menu
+    - **Input**: item (Items Class)
+    - **Expected Output**: Item removed from the menu.
+
+14. **Test Operation**: Adjust Menu Item
+    - **Input**: item (Items Class)
+    - **Expected Output**: Item details modified successfully.
+
+========== Items Class ==========
+
+15. **Test Operation**: Verify Item Details
+    - **Input**: itemName (String), ingredients (List of Strings), calories (Int), price (Double)
+    - **Expected Output**: Correct item details displayed.
+
