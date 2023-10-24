@@ -1,73 +1,92 @@
-========== User Class ==========
+=== User Class Test Cases ===
 
-1. **Test Operation**: Verify SignUp
-   - **Input**: username (String), password (String)
-   - **Expected Output**: Account creation successful.
-   - **Conditions**: username must be unique for each user.
+Test Case 1: User Sign Up - Positive Scenario
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Account creation successful.
 
-2. **Test Operation**: SignIn Validation
-   - **Input**: username (String), password (String)
-   - **Expected Output**: Access granted to the food order page.
-   - **Conditions**: password is case sensitive.
+Test Case 2: User Sign Up - Duplicate Username
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Username already taken.
 
-========== Payment Class ==========
+Test Case 3: User Sign In - Valid Credentials
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Access granted to the food order page.
 
-3. **Test Operation**: Link Apple Pay
-   - **Expected Output**: User's Apple Pay linked successfully.
+Test Case 4: User Sign In - Invalid Password
+Input:
+- username: "JohnDoe"
+- password: "password123"
+Expected Output: Invalid credentials.
 
-4. **Test Operation**: Link Google Pay
-   - **Expected Output**: User's Google Pay linked successfully.
+=== Payment Class Test Cases ===
 
-5. **Test Operation**: Link PayPal
-   - **Expected Output**: User's PayPal linked successfully.
+Test Case 5: Link Apple Pay
+Expected Output: Apple Pay linked successfully.
 
-========== Location Class ==========
+Test Case 6: Link Google Pay
+Expected Output: Google Pay linked successfully.
 
-6. **Test Operation**: Find Restaurants by Zipcode
-   - **Input**: zipcode (Int)
-   - **Expected Output**: List of nearby restaurants.
+Test Case 7: Link PayPal
+Expected Output: PayPal linked successfully.
 
-========== Order Class ==========
+=== Location Class Test Cases ===
 
-7. **Test Operation**: Customize Order
-   - **Expected Output**: Modified food items in the foodList.
+Test Case 8: Find Restaurants by Zipcode
+Input: zipcode: 12345
+Expected Output: Returns a list of nearby restaurants.
 
-8. **Test Operation**: Select Pickup Option
-   - **Expected Output**: User selects pickup instead of delivery.
+=== Order Class Test Cases ===
 
-========== Restaurant Class ==========
+Test Case 9: Customize Order
+Expected Output: Food list modified.
 
-9. **Test Operation**: Estimate Order Time
-   - **Input**: activityLevel (Int)
-   - **Expected Output**: Estimated time for delivery or pickup.
+Test Case 10: Select Pickup Option
+Expected Output: Order set to pickup instead of delivery.
 
-10. **Test Operation**: Process Payment
-    - **Input**: payment (Payment Class)
-    - **Expected Output**: Payment processed successfully.
+=== Restaurant Class Test Cases ===
 
-========== Delivery Driver Class ==========
+Test Case 11: Estimate Order Time - Low Activity Level
+Input: activityLevel: 1
+Expected Output: Estimated time: 20 minutes.
 
-11. **Test Operation**: Set Estimated Delivery Time
-    - **Input**: time (Int)
-    - **Expected Output**: Estimated delivery time set.
+Test Case 12: Process Payment
+Input: payment: [Valid Payment Class Object]
+Expected Output: Payment processed successfully.
 
-========== Menu Class ==========
+=== Delivery Driver Class Test Cases ===
 
-12. **Test Operation**: Add Item to Menu
-    - **Input**: item (Items Class)
-    - **Expected Output**: Item added successfully to the menu.
+Test Case 13: Set Estimated Delivery Time
+Input: time: 25
+Expected Output: Estimated delivery time set to 25 minutes.
 
-13. **Test Operation**: Remove Item from Menu
-    - **Input**: item (Items Class)
-    - **Expected Output**: Item removed from the menu.
+=== Menu Class Test Cases ===
 
-14. **Test Operation**: Adjust Menu Item
-    - **Input**: item (Items Class)
-    - **Expected Output**: Item details modified successfully.
+Test Case 14: Add Item to Menu
+Input: item: [Valid Items Class Object]
+Expected Output: Item added successfully.
 
-========== Items Class ==========
+Test Case 15: Remove Item from Menu
+Input: item: [Valid Items Class Object that exists on the menu]
+Expected Output: Item removed successfully.
 
-15. **Test Operation**: Verify Item Details
-    - **Input**: itemName (String), ingredients (List of Strings), calories (Int), price (Double)
-    - **Expected Output**: Correct item details displayed.
+Test Case 16: Adjust Menu Item
+Input: item: [Valid Items Class Object with modified properties]
+Expected Output: Item details updated successfully.
+
+=== Items Class Test Cases ===
+
+Test Case 17: Verify Item Details
+Input:
+- itemName: "Burger"
+- ingredients: ["Bread", "Patty", "Lettuce"]
+- calories: 450
+- price: 5.99
+Expected Output: Details match input.
+
 
