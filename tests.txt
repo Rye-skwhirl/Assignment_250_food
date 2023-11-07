@@ -1,0 +1,92 @@
+=== User Class Test Cases ===
+
+Test Case 1: User Sign Up - Positive Scenario
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Account creation successful.
+
+Test Case 2: User Sign Up - Duplicate Username
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Username already taken.
+
+Test Case 3: User Sign In - Valid Credentials
+Input:
+- username: "JohnDoe"
+- password: "Password123"
+Expected Output: Access granted to the food order page.
+
+Test Case 4: User Sign In - Invalid Password
+Input:
+- username: "JohnDoe"
+- password: "password123"
+Expected Output: Invalid credentials.
+
+=== Payment Class Test Cases ===
+
+Test Case 5: Link Apple Pay
+Expected Output: Apple Pay linked successfully.
+
+Test Case 6: Link Google Pay
+Expected Output: Google Pay linked successfully.
+
+Test Case 7: Link PayPal
+Expected Output: PayPal linked successfully.
+
+=== Location Class Test Cases ===
+
+Test Case 8: Find Restaurants by Zipcode
+Input: zipcode: 12345
+Expected Output: Returns a list of nearby restaurants.
+
+=== Order Class Test Cases ===
+
+Test Case 9: Customize Order
+Expected Output: Food list modified.
+
+Test Case 10: Select Pickup Option
+Expected Output: Order set to pickup instead of delivery.
+
+=== Restaurant Class Test Cases ===
+
+Test Case 11: Estimate Order Time - Low Activity Level
+Input: activityLevel: 1
+Expected Output: Estimated time: 20 minutes.
+
+Test Case 12: Process Payment
+Input: payment: [Valid Payment Class Object]
+Expected Output: Payment processed successfully.
+
+=== Delivery Driver Class Test Cases ===
+
+Test Case 13: Set Estimated Delivery Time
+Input: time: 25
+Expected Output: Estimated delivery time set to 25 minutes.
+
+=== Menu Class Test Cases ===
+
+Test Case 14: Add Item to Menu
+Input: item: [Valid Items Class Object]
+Expected Output: Item added successfully.
+
+Test Case 15: Remove Item from Menu
+Input: item: [Valid Items Class Object that exists on the menu]
+Expected Output: Item removed successfully.
+
+Test Case 16: Adjust Menu Item
+Input: item: [Valid Items Class Object with modified properties]
+Expected Output: Item details updated successfully.
+
+=== Items Class Test Cases ===
+
+Test Case 17: Verify Item Details
+Input:
+- itemName: "Burger"
+- ingredients: ["Bread", "Patty", "Lettuce"]
+- calories: 450
+- price: 5.99
+Expected Output: Details match input.
+
+
