@@ -3,7 +3,7 @@ The first database will manage user info such as email, password, name, and paym
 The second database will have the various locations for the restaurant and will help users find the closest one to them, as well as show menu items for those locations.
 
 
-User data is grouped together in one location for easy access when it's needed. 
+User data is grouped together in one location for easy access when it's needed. Will be private so it cannot be accessed and changed by anyone other than the user.
 Location and restaurant are grouped together in their own database so it will be easier to find
  the closest restaurant to a user once they provide a zipcode or city name. 
  Menu items are tied to the restaurant and will be provided to the user after a location has been chosen.
