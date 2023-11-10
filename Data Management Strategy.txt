@@ -8,4 +8,4 @@ Location and restaurant are grouped together in their own database so it will be
  the closest restaurant to a user once they provide a zipcode or city name. 
  Menu items are tied to the restaurant and will be provided to the user after a location has been chosen.
 
- Database information will be handled through SQL tables, using programs like MySQL or another variants.
+ Database information will be handled through SQL tables, using programs like MySQL or another variant.
